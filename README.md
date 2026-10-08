@@ -14,7 +14,7 @@ This repository contains scripts for generating, fine-tuning, and testing the FL
 
 3. **`test_finetuned_flower42.py`**
    - **Purpose:** Tests and evaluates the fine-tuned FLOWER model in a simulated PyBullet environment.
-   - **Contents:** Demonstrates a hybrid AI pipeline. First, the fine-tuned FLOWER model performs a closed-loop approach based on visual inputs and language prompts. Once close to the object, it seamlessly hands over control to a SAC-based multi-finger grasping policy to execute a precise grasp and lift. The entire process is recorded and saved as an MP4 video with overlaid debug information.
+   - **Contents:** Demonstrates a hybrid AI pipeline. First, the fine-tuned FLOWER model performs a closed-loop approach based on visual inputs and language prompts. Once close to the object, it seamlessly hands over control to a SAC-based multi-finger grasping policy to execute a precise grasp and lift. The entire process is recorded and saved as an MP4 video with overlaid debug information. なお、現在のコードでは、active_size_cal2.pyをつかうようになっている。この関数は、物体の中心とサイズを引数としてあたえるようになっている。物体の中心としては、ＶＬＡがCloseの信号を出した時点での、親指と人差し指を結ぶ線の中心を与えている。いっぽう、サイズは、決め打ちの値をつかっている。
 -e 
 ## Installation
 
