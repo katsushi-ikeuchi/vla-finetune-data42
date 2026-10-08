@@ -15,3 +15,11 @@ This repository contains scripts for generating, fine-tuning, and testing the FL
 3. **`test_finetuned_flower42.py`**
    - **Purpose:** Tests and evaluates the fine-tuned FLOWER model in a simulated PyBullet environment.
    - **Contents:** Demonstrates a hybrid AI pipeline. First, the fine-tuned FLOWER model performs a closed-loop approach based on visual inputs and language prompts. Once close to the object, it seamlessly hands over control to a SAC-based multi-finger grasping policy to execute a precise grasp and lift. The entire process is recorded and saved as an MP4 video with overlaid debug information.
+-e 
+## Installation
+
+To run these scripts, ensure you are using the `flower_cal` environment.
+
+```bash
+pip install -r requirements.txt
+```
